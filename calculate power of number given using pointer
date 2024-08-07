@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int f(int *a,int *b){
+    int pow=1;
+    for(int i=1;i<=*b;i++){
+        pow *= *a;
+    }
+    return pow;
+}
+int main(){
+    int p= 4,q =2,r;
+    r=f(&p,&q);
+    printf("%d",r);
+}
